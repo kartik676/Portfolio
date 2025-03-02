@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(33, 8, 56);
+
+            color: white;
+            font-family: 'poppins',
+                sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(10, 11, 88);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(153, 153, 226);
+            font-size: 1.03rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.6px;
+            margin: 10px 90px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 2rem;
+
+        }
+
+        .leftSection .btn {
+
+            background: rgb(153, 153, 226);
+            color: rgb(33, 8, 56);
+            border: 2px solid rgb(153, 153, 226);
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px;
+            top: 350px;
+            
+        }
+
+        .btn:nth-child(1) {
+            background: transparent;
+            color: #9c97f1;
+            
+        }
+        
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 10px;
+
+        }
+
+        .secondSection {
+            font-size: 1.3rem;
+            height: 85vh;
+        }
+
+        footer p {
+            text-align: center;
+            height: 10px;
+            margin-bottom: 2.5rem;
+        }
+
+
+        .Text-gray {
+            font-size: 1.2rem;
+            color: rgb(170, 107, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kartik's Portfolio</div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Kartik</span>
+                <div>I am a <span id="element"></span></div>
+                <div class="buttons">
+                    <button class="btn" onclick="window.open('assets/Kartik_Resume.pdf')"> Resume</button>
+                    <button onclick="window.location.href='https://www.linkedin.com/in/kartik-maurya-887367312/';" class="btn">LinkedIn</button>
+                    <button onclick="window.location.href='https://github.com/kartik676';" class="btn">GitHub</button>
+                </div>
+
+
+            </div>
+            <div class="rightSection">
+                <img src="assets/pn.png" alt="Developer">
+
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <span class="Text-gray">Get to know</span>
+            <h3>About Me</h3>
+            <div class="text-container">
+                <p>
+                    Hi! , I am Kartik Maurya a third year student doing BCA from one of the Central University in India
+                    i.e. Indira Gandhi National Tribal University.
+                    I am a dedicated Computer Science student with a passion for technology and innovation, I am eager
+                    to
+                    leverage my academic background and hands-on experience to contribute to the ever-evolving field of
+                    software development.
+
+                    <br>I am particularly interested in exploring opportunities in Web Development. My goal is to apply
+                    my technical skills and creativity to tackle challenging problems and contribute to innovative
+                    solutions that make a meaningful impact.
+
+                    <br> - My coursework has equipped me with a solid foundation in programming languages such as Java,
+                    Python, and C++.
+
+                    <br> - Through my learning I have honed my skills in web application development using
+                    HTML, CSS, and JavaScript.
+
+
+                    <br>Let’s connect! I am eager to explore opportunities where I can contribute my skills and learn
+                    from experienced professionals in the field of computer science.
+                </p>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>Email - <a href="mailto:kartikmaurya919@gmail.com">kartikmaurya919@gmail.com</a></p>
+            <p>Copyright &#169; 2024 Kartik Maurya. All Rights Reserved.</p>
+        </footer>
+
+</body>
+
+</html>
+
+</main>
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Web Developer.', 'Programmer.'],
+        typeSpeed: 180,
+        backSpeed: 150,
+        loop: true
+    });
+</script>
+
+
+</body>
+
+</html>
